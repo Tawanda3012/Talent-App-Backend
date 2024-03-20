@@ -12,8 +12,7 @@ router.post('/', async (req, res) => {
   const newProfile = new Profile({
     email: req.body.email,
     name: req.body.name,
-    occupation: req.body.occupation,
-    // Other profile fields
+    occupation: req.body.occupation
   });
 
   try {
